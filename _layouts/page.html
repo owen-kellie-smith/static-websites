@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+
+    <div class="container">
+      <main>{{ content }}</main>
+    </div>
+
+    <section id="secondary-content">
+      {% if page.secondary_content %} {{ page.secondary_content | markdownify }}
+      {% endif %}
+    </section>
+
+  </body>
+</html>
