@@ -18,7 +18,7 @@ jobs:
 
       - name: Fetch fork counts
         run: |
-          repos=("owen-kellie-smith/ex-static" "owen-kellie-smith/tsb-static" "owen-kellie-smith/etcb-website" "owen-kellie-smith/avo-website")
+          repos=("owen-kellie-smith/ex-static" "owen-kellie-smith/dywo-website" "owen-kellie-smith/tsb-static" "owen-kellie-smith/etcb-website" "owen-kellie-smith/avo-website")
 
           echo "{" > forks.json
 
