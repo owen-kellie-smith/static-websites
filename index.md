@@ -22,33 +22,33 @@ secondary_content: |
 </thead>
 <tbody>
 <tr>
-  <td><a href="https://www.exmusicsummerschool.co.uk/">exmusicsummerschool.co.uk</a></td>
-  <td><a href="https://owen-kellie-smith.github.io/ex-static/">ex-static</a></td>
-  <td>Uses plain markdown</td>
-  <td data-repo="owen-kellie-smith/ex-static" data-field="forks">...</td>
-  <td data-repo="owen-kellie-smith/ex-static" data-field="pushed" data-repo-link="https://github.com/owen-kellie-smith/ex-static">...</td>
+  <td data-label="Original"><a href="https://www.exmusicsummerschool.co.uk/">exmusicsummerschool.co.uk</a></td>
+  <td data-label="Copy"><a href="https://owen-kellie-smith.github.io/ex-static/">ex-static</a></td>
+  <td data-label="Features" >Uses plain markdown</td>
+  <td  data-label="Forks" data-repo="owen-kellie-smith/ex-static" data-field="forks">...</td>
+  <td  data-label="Last push" data-repo="owen-kellie-smith/ex-static" data-field="pushed" data-repo-link="https://github.com/owen-kellie-smith/ex-static">...</td>
 </tr>
 <!-- Repeat rows for other repos, following the same structure -->
 <tr>
-  <td><a href="https://www.thornburyswingband.com/">thornburyswingband.com</a></td>
-  <td><a href="https://owen-kellie-smith.github.io/tsb-static/">tsb-static</a></td>
-  <td>Uses plain markdown</td>
-  <td data-repo="owen-kellie-smith/tsb-static" data-field="forks">...</td>
-  <td data-repo="owen-kellie-smith/tsb-static" data-field="pushed" data-repo-link="https://github.com/owen-kellie-smith/tsb-static">...</td>
+  <td data-label="Original"><a href="https://www.thornburyswingband.com/">thornburyswingband.com</a></td>
+  <td data-label="Copy"><a href="https://owen-kellie-smith.github.io/tsb-static/">tsb-static</a></td>
+  <td data-label="Features" >Uses plain markdown</td>
+  <td  data-label="Forks" data-repo="owen-kellie-smith/tsb-static" data-field="forks">...</td>
+  <td  data-label="Last push" data-repo="owen-kellie-smith/tsb-static" data-field="pushed" data-repo-link="https://github.com/owen-kellie-smith/tsb-static">...</td>
 </tr>
 <tr>
-  <td>Original is offline (as it was replaced by the copy)</td>
-  <td><a href="https://owen-kellie-smith.github.io/etcb-website/">etcb-website</a></td>
-  <td>Single web-page</td>
-  <td data-repo="owen-kellie-smith/etcb-website" data-field="forks">...</td>
-  <td data-repo="owen-kellie-smith/etcb-website" data-field="pushed" data-repo-link="https://github.com/owen-kellie-smith/etcb-website">...</td>
+  <td data-label="Original"> offline -- replaced by the copy</td>
+  <td data-label="Copy"><a href="https://owen-kellie-smith.github.io/etcb-website/">etcb-website</a></td>
+  <td data-label="Features" >Single web-page</td>
+  <td  data-label="Forks" data-repo="owen-kellie-smith/etcb-website" data-field="forks">...</td>
+  <td  data-label="Last push" data-repo="owen-kellie-smith/etcb-website" data-field="pushed" data-repo-link="https://github.com/owen-kellie-smith/etcb-website">...</td>
 </tr>
 <tr>
-  <td><a href="https://www.axevaleorchestra.co.uk/">axevaleorchestra.co.uk</a></td>
-  <td><a href="https://owen-kellie-smith.github.io/avo-website/">avo-website</a></td>
-  <td>Single web-page</td>
-  <td data-repo="owen-kellie-smith/avo-website" data-field="forks">...</td>
-  <td data-repo="owen-kellie-smith/avo-website" data-field="pushed" data-repo-link="https://github.com/owen-kellie-smith/avo-website">...</td>
+  <td data-label="Original"><a href="https://www.axevaleorchestra.co.uk/">axevaleorchestra.co.uk</a></td>
+  <td data-label="Copy"><a href="https://owen-kellie-smith.github.io/avo-website/">avo-website</a></td>
+  <td data-label="Features" >Single web-page</td>
+  <td  data-label="Forks" data-repo="owen-kellie-smith/avo-website" data-field="forks">...</td>
+  <td  data-label="Last push" data-repo="owen-kellie-smith/avo-website" data-field="pushed" data-repo-link="https://github.com/owen-kellie-smith/avo-website">...</td>
 </tr>
 </tbody>
 </table>

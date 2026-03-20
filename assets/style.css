@@ -248,4 +248,29 @@ img {
   }
 }
 
+@media (max-width: 600px) {
+  table, thead, tbody, tr, td, th {
+    display: block;
+  }
 
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
