@@ -1,0 +1,12 @@
+title: My Site
+description: My Jekyll site
+
+# IMPORTANT: change this
+baseurl: "/static-websites"
+
+# Your full GitHub Pages URL
+url: "https://owen-kellie-smith.github.io"
+
+# Optional but useful
+markdown: kramdown
+theme: null
