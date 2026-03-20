@@ -2,10 +2,10 @@ title: My Site
 description: My Jekyll site
 
 # IMPORTANT: change this
-baseurl: "/static-websites"
+baseurl: ""
 
 # Your full GitHub Pages URL
-url: "https://owen-kellie-smith.github.io"
+url: "https://seatonsite.co.uk"
 
 # Optional but useful
 markdown: kramdown
