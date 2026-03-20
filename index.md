@@ -136,8 +136,8 @@ By following steps 1-8 below you can:
 
 ## Step 1: Fork the repository
 
-1. Go to the repository: 'https://github.com/owen-kellie-smith/\<repo-name-for-your-website\>'
-2. Click **Fork** (top right).
+1. Go to the repository: `https://github.com/owen-kellie-smith/\<repo-name-for-your-website\>`
+2. Click **Fork** (top right: Pin Watch **Fork** Star).
 
 > Now you have your own copy of the website content under your GitHub account and so the website content is **fully under your control**.
 
