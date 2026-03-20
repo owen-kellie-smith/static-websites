@@ -8,10 +8,10 @@
 /* Page styling */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.8; /* increased spacing for readability */
   background-color: #f5f7fa;
   color: #333;
-  padding: 20px;
+  padding: 30px; /* more breathing room around page edges */
 }
 
 /* Container */
@@ -19,23 +19,53 @@ body {
   max-width: 900px;
   margin: 0 auto;
   background: #ffffff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Heading */
-h1 {
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
-  font-size: 1.8rem;
   color: #222;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 25px;
+}
+
+/* Paragraphs */
+p, ul, ol, pre, blockquote {
+  margin-bottom: 20px; /* more space between paragraphs/lists */
+}
+
+/* Code blocks */
+pre, code {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  overflow-x: auto;
+  margin-bottom: 20px; /* spacing after code */
+  font-family: 'Courier New', monospace;
+  line-height: 1.5;
 }
 
 /* Table styling */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* extra space after tables */
 }
 
 thead {
@@ -44,7 +74,7 @@ thead {
 }
 
 th, td {
-  padding: 10px;
+  padding: 12px; /* more padding inside cells */
   border: 1px solid #ddd;
   text-align: left;
 }
@@ -66,9 +96,156 @@ a:hover {
 /* Secondary section */
 #secondary-content {
   max-width: 900px;
-  margin: 20px auto 0;
-  padding: 15px;
+  margin: 30px auto 0; /* more top margin */
+  padding: 25px;
   background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+
+/* Lists */
+ul, ol {
+  padding-left: 20px; /* indent lists */
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #3498db;
+  padding-left: 15px;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Sortable table */
+#repo-table th {
+  cursor: pointer;
+}
+#repo-table th:hover {
+  text-decoration: underline;
+}
+#repo-table {
+  border-collapse: collapse;
+}
+#repo-table td, #repo-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#repo-table th {
+  background-color: #f2f2f2;
+}
+
+/* ── Images ── */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5%;
+  border-radius: 3px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-auto-rows: 150px;
+  gap: 0.2%;
+  grid-auto-flow: dense;
+}
+
+.gallery .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* size modifiers for gallery */
+.xxl {
+  grid-column: span 6;
+  grid-row: span 4;
+}
+.xl {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+.large-square {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+.large {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.mid {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.medium {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* ===== Responsive ===== */
+/* Tablet */
+@media (max-width: 900px) {
+  .xxl {
+    grid-column: span 3;
+  }
+
+  .xl,
+  .large {
+    grid-column: span 2;
+  }
+  .large-square {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .container {
+    max-width: 75%;
+    margin: 40px auto;
+    padding: 10px;
+  }
+  .hero-slider {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .hero-slider {
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    max-width: 85%;
+    margin: 10px auto;
+    padding: 5px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+

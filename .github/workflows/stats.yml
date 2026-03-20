@@ -1,0 +1,41 @@
+name: Update fork counts
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # every hour
+  workflow_dispatch:      # allows manual run
+
+jobs:
+  update-forks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Fetch fork counts
+        run: |
+          repos=("owen-kellie-smith/ex-static" "owen-kellie-smith/tsb-static" "owen-kellie-smith/etcb-website" "owen-kellie-smith/avo-website")
+
+          echo "{" > forks.json
+
+          for repo in "${repos[@]}"; do
+            data=$(curl -s https://api.github.com/repos/$repo)
+
+            forks=$(echo $data | jq '.forks_count')
+            updated=$(echo $data | jq -r '.updated_at')
+            pushed=$(echo $data | jq -r '.pushed_at')
+
+            echo "\"$repo\": {\"forks\": $forks, \"updated_at\": \"$updated\", \"pushed_at\": \"$pushed\"}," >> forks.json
+          done
+
+          sed -i '$ s/,$//' forks.json
+          echo "}" >> forks.json
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add forks.json
+          git commit -m "Update fork counts" || echo "No changes"
+          git push
