@@ -59,7 +59,14 @@ secondary_content: |
 // Format dates as YYYY-MM-DD
 function formatDate(dateString) {
   const date = new Date(dateString);
-  return date.toISOString().split("T")[0];
+  return date.toLocaleString("en-GB", {
+  day: "2-digit",
+  month: "2-digit",
+  year: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: false
+  });
 }
 
 // Load data from forks.json
