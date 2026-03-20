@@ -236,7 +236,7 @@ Go to your domain registrar (where you bought your domain) and
 - **write down on paper** / take a screenshot of the existing nameservers
 - delete all the existing nameservers and add just the two xyz.ns.cloudflare.com nameservers from your Cloudflare account in [step 4](#step-4-set-up-cloudflare). 
 - wait 10 minutes
-> Your Github site will be visible at:  `https://yourdomain.com>/`
+> Your Github site will be visible at:  `https://yourdomain.com/`
 > So you will be free at your leisure to stop renewing your hosting plan for the old copy of the site.
 
 
