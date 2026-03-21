@@ -128,7 +128,7 @@ document.querySelectorAll("#repo-table th").forEach((header, colIndex) => {
 
 # How to host your website for free and control it 
 
-By following steps 1-8 below you can:
+By following steps 1-8 below you can (in about an hour)
 1. **Keep full control of your website content** – Your website files live in your own free GitHub account. Other people can suggest changes, but only you can **accept** them. All changes are  reversible. You can make changes directly on the GitHub website or via a local copy on your own machine, which you then push to GitHub.
 2. **Host your website for free** – GitHub Pages hosts your site for free and implements your changes within a couple of minutes.
 3. **Keep full control of your domain name** – you decide what it points to and how it’s managed. Via your own free Cloudflare account, Cloudflare connects your domain to your Github site.
